@@ -1,0 +1,154 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="49dp"
+    android:background="@color/color_e9eef4"
+    android:orientation="vertical"
+    tools:context="com.gengli.glservice.fragment.PDTWOFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_e9eef4"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tmp_main_line2"
+                android:layout_marginTop="20dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerVertical="true"
+                    android:background="#e9eef4" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="10dp"
+                    android:background="@android:color/white"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="产品简介"
+                    android:textColor="#ff999999"
+                    android:textSize="10sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/pro_two_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:text="GHP16C-Ⅰ 车载混凝土湿喷机采用汽车底盘，零部件通用性强，设备维护方便。整体具有油耗低、功率高、工作可靠、配件供应及维修方便等特点。 GHP16C-Ⅰ 车载混凝土湿喷机泵送系统能耗少，工作效率高，故障率低，易损件少，维护使用成本低，系统可靠性高，输送量稳定。喷射系统采用单喷头或多喷头喷浆作业，提高了工作效率。 GHP16C-Ⅰ 车载混凝土湿喷机配有自动润滑系统：对主要密封部位采用自动润滑，油脂加注量、加注时间自动控制，大大延长易损件寿命。速凝剂添加连续可调：可根据喷浆量无极调节。"
+                android:textColor="#ff666666"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tmp_main_line2"
+                android:layout_marginTop="20dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerVertical="true"
+                    android:background="#e9eef4" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="10dp"
+                    android:background="@android:color/white"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="技术指标"
+                    android:textColor="#ff999999"
+                    android:textSize="10sp" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/pro_two_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="13dp"
+                android:adjustViewBounds="true" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tmp_main_line2"
+                android:layout_marginTop="20dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerVertical="true"
+                    android:background="#e9eef4" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="10dp"
+                    android:background="@android:color/white"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="参数图纸"
+                    android:textColor="#ff999999"
+                    android:textSize="10sp" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/pro_two_img2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="13dp"
+                android:adjustViewBounds="true" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

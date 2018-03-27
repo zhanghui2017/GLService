@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/img_ing_fitting_info"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/text_ing_fitting_info_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="70dp"
+        android:layout_toRightOf="@+id/img_ing_fitting_info"
+        android:text="隧道钢筋网焊网机"
+        android:textColor="#ff5f7284"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/text_ing_fitting_info_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="25dp"
+        android:layout_toRightOf="@+id/text_ing_fitting_info_name"
+        android:text="*2"
+        android:textColor="#ff5f7284"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/text_ing_fitting_info_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:textColor="#ff5f7284"
+        android:textSize="10sp"
+        android:visibility="invisible" />
+
+</RelativeLayout>

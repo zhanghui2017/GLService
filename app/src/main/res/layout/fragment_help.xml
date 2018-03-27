@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_e9eef4"
+    android:orientation="vertical"
+    tools:context="com.gengli.glservice.fragment.HelpFragment">
+
+    <RelativeLayout
+        android:id="@+id/person_card_control_view"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="160dp"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/shape_help_menu_bg"
+            android:gravity="center"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/help_zhinan_bt"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_personcard_left"
+                android:text="指南"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/help_zixun_bt"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_personcard_right"
+                android:text="咨询"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/help_search_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="18dp"
+            android:src="@drawable/nav_search" />
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/help_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp" />
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/item_contacts_delete_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingLeft="13dp"
+        android:src="@drawable/my_but_delete"
+        android:visibility="gone" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_toRightOf="@+id/item_contacts_delete_bt">
+
+        <RelativeLayout
+            android:id="@+id/tmp_rel_5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dp"
+            android:background="@drawable/img_contacts_header_bg">
+
+            <TextView
+                android:id="@+id/item_contacts_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="张"
+                android:textColor="#ffabbfd2"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="19dp"
+            android:layout_toRightOf="@+id/tmp_rel_5"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_contacts_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="张山"
+                android:textColor="#ff333333"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/item_contacts_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="15811025523"
+                android:textColor="#ff999999"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/item_contacts_default_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="13dp"
+            android:src="@drawable/img_default" />
+    </RelativeLayout>
+</RelativeLayout>

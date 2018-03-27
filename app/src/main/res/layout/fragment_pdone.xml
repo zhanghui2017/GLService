@@ -1,0 +1,220 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="50dp"
+    android:background="@color/color_e9eef4"
+    tools:context="com.gengli.glservice.fragment.PDONEFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_e9eef4"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+            <com.gengli.glservice.view.ImageSlideView
+                android:id="@+id/pro_one_slide_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ffc6d3e2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/pro_one_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="10dp"
+                android:text="耿力GHP16C-I车载混凝土湿喷机"
+                android:textColor="@color/color_333333"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/pro_one_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="GHP16C-Ⅰ车载混凝土湿喷机采用汽车底盘，零部件通用性强，设备维护方便。整体具有油耗低、功率高、工作可靠、配件供应及维修方便"
+                android:textColor="#ff999999"
+                android:textSize="10sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#ffc6d3e2" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/pro_one_model"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="产品型号：GHP16C-Ⅰ"
+                    android:textColor="#ff666666"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/pro_one_weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="200dp"
+                    android:text="整机重量：7000kg"
+                    android:textColor="#ff666666"
+                    android:textSize="11sp" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/pro_one_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="10dp"
+                android:text="外形尺寸：6200×2000×2800mm"
+                android:textColor="#ff666666"
+                android:textSize="11sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="应用范围："
+                    android:textColor="#ff666666"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/pro_one_scope"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="水利工程、市政工程、道路桥梁工程、隧道工程等"
+                    android:textColor="#ff666666"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ffc6d3e2" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tmp_main_line2"
+                android:layout_marginTop="20dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerVertical="true"
+                    android:background="#e9eef4" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="10dp"
+                    android:background="@android:color/white"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="相关产品"
+                    android:textColor="#9E9E9E"
+                    android:textSize="10sp" />
+
+            </RelativeLayout>
+
+            <com.gengli.glservice.view.HorizontalListView
+                android:id="@+id/pro_one_about_product_list"
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="13dp"
+                android:scrollbars="none"></com.gengli.glservice.view.HorizontalListView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tmp_main_line2"
+                android:layout_marginTop="20dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerVertical="true"
+                    android:background="#e9eef4" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="10dp"
+                    android:background="@android:color/white"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="相关配件"
+                    android:textColor="#9E9E9E"
+                    android:textSize="10sp" />
+
+            </RelativeLayout>
+
+            <com.gengli.glservice.view.HorizontalListView
+                android:id="@+id/pro_one_about_fitting_list"
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="13dp"
+                android:scrollbars="none"></com.gengli.glservice.view.HorizontalListView>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

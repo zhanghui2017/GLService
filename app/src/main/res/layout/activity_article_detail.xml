@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.gengli.glservice.activity.ArticleDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/article_detail_back_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:adjustViewBounds="true"
+            android:padding="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_back_icon" />
+
+        <ImageView
+            android:id="@+id/article_detail_close_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/article_detail_back_bt"
+            android:adjustViewBounds="true"
+            android:padding="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_close_icon2" />
+
+        <TextView
+            android:id="@+id/article_detail_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="内容详情"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/color_e9eef4" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_article_detail_bg"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/article_fav_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/article_collection" />
+
+
+                <TextView
+                    android:id="@+id/article_title_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:text="90液压湿喷机常见故障及解决方法"
+                    android:textColor="@color/color_333333"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/article_time_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/article_title_text"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="日期：2017-07-20 17:11"
+                    android:textColor="#ff999999"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/artticle_cat_id_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/article_time_text"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="类别：产品百科 来自：耿力机械"
+                    android:textColor="#ff999999"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+
+            <VideoView
+                android:id="@+id/video_play_view"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent" />
+
+            <WebView
+                android:id="@+id/article_webview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"></WebView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

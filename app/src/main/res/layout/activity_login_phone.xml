@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center_horizontal"
+    tools:context="com.gengli.glservice.activity.LoginActivity">
+
+    <ImageView
+        android:id="@+id/login_phone_close_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/but_close" />
+
+    <ImageView
+        android:id="@+id/tmp_login_phone_title_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/login_logo" />
+
+    <TextView
+        android:id="@+id/tmp_text_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tmp_login_phone_title_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="耿力售后服务"
+        android:textColor="#ff0e58a8"
+        android:textSize="14sp" />
+
+
+    <RelativeLayout
+        android:id="@+id/tmp_rel_10"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/tmp_text_6"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_login_edit_bg">
+
+        <EditText
+            android:id="@+id/login_phone_edit"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:hint="请输入手机号码"
+            android:paddingLeft="15dp"
+            android:textColor="#ffa4b9cf"
+            android:textSize="12sp" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/login_phone_verafy_bt"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:text="获取短信验证码"-->
+            <!--android:textColor="#ff4e8dcf"-->
+            <!--android:textSize="10sp" />-->
+
+        <!--<View-->
+            <!--android:layout_width="1dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:layout_toLeftOf="@+id/login_phone_verafy_bt"-->
+            <!--android:background="#ffc5d6e6" />-->
+
+
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/login_phone_verify_edit"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/tmp_rel_10"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_login_edit_bg"
+        android:hint="请输入验证码"
+        android:paddingLeft="15dp"
+        android:textColor="#ffa4b9cf"
+        android:textSize="12sp" />
+
+
+    <TextView
+        android:id="@+id/tmp_text_8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_phone_verify_edit"
+        android:layout_marginTop="21dp"
+        android:gravity="center_horizontal"
+        android:text="客户免注册，通过企业号快速登录耿力售后服务平台"
+        android:textColor="#ffa4b9cf"
+        android:textSize="10sp" />
+
+
+    <TextView
+        android:id="@+id/login_phone_phone_bt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tmp_text_8"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shape_login_button_bg_un"
+        android:gravity="center"
+        android:text="手机号登录"
+        android:textColor="#ffffffff"
+        android:textSize="13sp" />
+
+
+    <TextView
+        android:id="@+id/login_phone_company_bt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/login_phone_phone_bt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shape_login_button_bg_cur"
+        android:gravity="center"
+        android:text="企业号登录"
+        android:textColor="#ff4e8dcf"
+        android:textSize="13sp" />
+
+
+</RelativeLayout>

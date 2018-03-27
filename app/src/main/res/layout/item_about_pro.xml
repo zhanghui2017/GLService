@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="170dp"
+    android:layout_height="145dp" >
+
+    <RelativeLayout
+        android:layout_width="160dp"
+        android:layout_height="145dp"
+        android:background="@drawable/person_about_pro_1">
+
+        <ImageView
+            android:id="@+id/item_about_pro_img"
+            android:layout_width="131dp"
+            android:layout_height="98dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp" />
+
+        <View
+            android:layout_width="160dp"
+            android:layout_height="1dp"
+            android:layout_above="@+id/item_about_pro_name"
+            android:background="#C6D3E2" />
+
+        <TextView
+            android:id="@+id/item_about_pro_name"
+            android:layout_width="160dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="#F6F9FB"
+            android:gravity="center"
+            android:text="耿力 GYP-90液压湿喷机"
+            android:textColor="@color/color_333333"
+            android:textSize="11sp" />
+    </RelativeLayout>
+</RelativeLayout>

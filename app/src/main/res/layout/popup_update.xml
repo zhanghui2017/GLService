@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#50000000"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/shape_update_bg">
+
+
+        <ImageView
+            android:id="@+id/pop_update_title_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/img_pop_update_title" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="29dp"
+            android:text="有新版本可升级"
+            android:textColor="#ffffffff"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/pop_update_version_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/shape_version_text_bg"
+            android:paddingBottom="3dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="3dp"
+            android:text="版本号：V.1.90"
+            android:textColor="#ffffffff"
+            android:textSize="11sp" />
+
+        <RelativeLayout
+            android:id="@+id/pop_update_content_view"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@id/pop_update_title_view"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginTop="13dp">
+
+            <RelativeLayout
+                android:id="@+id/tmp_rel_11"
+                android:layout_width="match_parent"
+                android:layout_height="16dp">
+
+                <TextView
+                    android:id="@+id/tmp_text_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="更新内容"
+                    android:textColor="#ff55a7e7"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/tmp_img_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/tmp_text_10"
+                    android:src="@drawable/img_update_circle" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/tmp_img_7"
+                    android:background="#55A7E7" />
+
+                <ImageView
+                    android:id="@+id/tmp_img_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tmp_text_10"
+                    android:src="@drawable/img_update_circle" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tmp_img_8"
+                    android:background="#55A7E7" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:background="#55A7E7" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:background="#55A7E7" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="#55A7E7" />
+
+
+            <TextView
+                android:id="@+id/pop_update_content_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tmp_rel_11"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="1. 修复了一些用户体验问题； \n2. 新增在线维修报修功能，方便用户在线填报信息；\n3. 修复了一些用户体验问题； \n4. 新增在线维修报修功能，方便用户在线填报信息。"
+                android:textColor="#ff666666"
+                android:textSize="10dp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pop_update_content_view"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp">
+
+
+            <TextView
+                android:id="@+id/pop_update_bt1"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/shape_pop_button_bg1"
+                android:gravity="center"
+                android:text="稍后升级"
+                android:textColor="#ff999999"
+                android:textSize="13sp" />
+
+
+            <TextView
+                android:id="@+id/pop_update_bt2"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/shape_pop_button_bg2"
+                android:gravity="center"
+                android:text="立即升级"
+                android:textColor="#ffffffff"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>
